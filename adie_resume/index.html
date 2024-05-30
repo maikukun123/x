@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adelaide Henson|Resume</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles.css">
+<body>
+    <nav>
+        <a href="#" class="Adelaide">Adelaide</a>
+        <ul>
+
+            <li><a href="#Skills">Education</a></li>
+            <li><a href="#Education">Certificates</a></li>
+            <li><a href="#Experience">Summary</a></li>
+            <li><a href="#footer">Contacts</a></li>
+        </ul>
+        <div class="toggle_btn">
+            <img src="./img/menu.png" alt="menu" class="menu">
+        </div>
+    </nav>
+    <div class="container">
+        <img src="./img/background.jpg" alt="background1" class="background">
+    </div>
+    <div>
+        
+        <section id="Skills" class="section2">
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1" checked>
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide first">
+                        <img src="./img/1.png" alt="Image 1">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/2.png" alt="Image 2">
+                    </div>
+                    <div class="slide">
+                        <img src="./img/3.png" alt="Image 3">
+                    </div>
+                <div class="navigation-arrows">
+                    <div class="prev">&#10094;</div>
+                    <div class="next">&#10095;</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Education" class="section3">
+            <div class="education-image">
+                <h1>Educational Background and Certificates</h1>
+                <div class="certificate-container">
+                    <figure>
+                        <img src="./img/1.1.png" alt="Certificate Image" class="certificate-image">
+                    </figure>
+                    <figure>
+                        <img src="./img/1.2.png" alt="Certificate Image" class="certificate-image">
+                    </figure>
+                    <figure>
+                        <img src="./img/1.3.png" alt="Certificate Image" class="certificate-image">
+                    </figure>
+                    <figure>
+                        <img src="./img/1.9.png" alt="Certificate Image" class="certificate-image">
+                    </figure>
+                    <figure>
+                        <img src="./img/1.10.png" alt="Certificate Image" class="certificate-image">
+                    </figure>
+                    <figure>
+                        <img src="./img/1.11.png" alt="Certificate Image" class="certificate-image">
+                    </figure>
+                    <figure>
+                        <img src="./img/1.12.png" alt="Certificate Image" class="certificate-image">
+                    </figure>
+                </div>
+            </div>
+            
+            <section id="Experience" class="section1">
+            <div class="box1">
+                <h2>Skills</h2>
+                <p class="justified">Collaborative to engage in good camaraderie.</p>
+                <p class="justified">Adoptive in fostering areas of improvement with flexible results.</p>
+                <p class="justified">Responsible with eagerness to accomplish all the tasks assigned.</p>
+                <p class="justified"> Strong leadership and organizational skills to avoid boundaries.</p>
+            </div>
+            <div class="box2">
+                <h2>Experience</h2>
+                <p>Freelancer (2017-2020)</p>
+                <p class="justified">I expand my horizons in teaching through home tutoring experiences that showcase my passion for providing personalized and effective support to my students.</p>
+            </div>
+            <div class="box3">
+                <h2>Experience</h2>
+                <p>Bagger (2021)</p>
+                <p class="justified">Ensures that the items are properly packed and secured, as well as placed in accordance with their bar code.</p>
+                <p class="left">Auditor In-charge (2023-2024)</p>
+                <p class="justified">Carried out detailed financial audits, maintained financial record, and implement operational improvements in analytical procedures</p>
+            </div>
+            <div class="box4">
+                <h2>Hobbies</h2>
+                <p>Playing Instruments</p>
+                <p>Drawing</p>
+                <p>Landscape Gardener</p>
+                <p>Cooking</p>
+                <p>Photography</p>
+                <p>Singing</p>
+                <p>Blogging</p>
+
+            </div>
+        </section>
+            <div class="popup_image">
+                <span>&times;</span>
+                <img src="" alt="Popup Image">
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer" id="footer">
+        <p>&copy; 2024 ADIE. All rights reserved.</p>
+        <div class="contact-info">
+            <div class="social-handles">
+                <a href="https://www.facebook.com/henson.adelaide/" target="_blank">
+                    <img src="./img/facebook.png" alt="Facebook">
+                </a>
+                <a href="mailto:salemmike4@gmail.com" target="_blank">
+                    <img src="./img/gmail.png" alt="Gmail">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("nav");
+            if (window.scrollY > 0) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        });
+
+        var modal = document.querySelector('.popup_image');
+        var modalImg = modal.querySelector('img');
+        var span = modal.querySelector('span');
+
+        var images = document.querySelectorAll('.certificate-image');
+
+        images.forEach(image => {
+            image.addEventListener('click', function() {
+                modal.style.display = 'flex';
+                modalImg.src = this.src;
+            });
+        });
+
+        span.addEventListener('click', function() {
+            modal.style.display = 'none';
+        });
+
+        modal.addEventListener('click', function(e) {
+            if (e.target !== modalImg) {
+                modal.style.display = 'none';
+            }
+        });
+
+        const socialHandles = document.querySelectorAll('.social-handles a');
+
+        socialHandles.forEach((handle) => {
+            handle.addEventListener('click', (event) => {
+                event.preventDefault();
+                const url = handle.getAttribute('href');
+                window.open(url, '_blank');
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var counter = 1;
+            var numSlides = 4;
+
+            document.querySelector('.prev').addEventListener('click', function() {
+                counter--;
+                if (counter < 1) {
+                    counter = numSlides;
+                }
+                document.getElementById('radio' + counter).checked = true;
+            });
+
+            document.querySelector('.next').addEventListener('click', function() {
+                counter++;
+                if (counter > numSlides) {
+                    counter = 1;
+                }
+                document.getElementById('radio' + counter).checked = true;
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            const menu = document.querySelector('.menu');
+            const navLinks = document.querySelector('nav ul');
+            const links = document.querySelectorAll('nav ul li a');
+    
+            menu.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+    
+            links.forEach(link => {
+                link.addEventListener('click', function() {
+                    navLinks.classList.remove('active');
+                });
+            });
+        });
+        window.addEventListener('scroll', function() {
+            var nav = document.querySelector('nav');
+            if (window.pageYOffset > 0) {
+              nav.classList.add('scrolled');
+            } else {
+              nav.classList.remove('scrolled');
+            }
+          });
+    </script>
+</body>
+</html>
